@@ -1,0 +1,127 @@
+/* Footer styling */
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 20px 0; /* Vertical padding */
+  position: relative; /* To ensure it is positioned correctly */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
+}
+
+/* Container styling */
+.container {
+  max-width: 1200px; /* Set a max-width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px; /* Horizontal padding */
+}
+
+/* Row styling */
+.row {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+/* Column styling */
+.col-md-3 {
+  flex: 1; /* Each column takes equal width */
+  padding: 0 15px; /* Horizontal padding for columns */
+  box-sizing: border-box; /* Include padding in width calculation */
+  min-width: 200px; /* Minimum width for columns */
+  text-align: center;
+  justify-content: center;
+
+}
+
+/* Social icons styling */
+.social-icons {
+  margin-top: 10px; /* Margin above social icons */
+}
+
+.social-icon {
+  
+  color: #fff; /* Icon color */
+  font-size: 20px; /* Icon size */
+  margin-right: 20px; /* Space between icons */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  padding-left: 15px;
+}
+
+.social-icon:hover {
+  color: #ddd; /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .col-md-3 {
+    width: 100%; /* Make columns full width */
+    margin-bottom: 20px; /* Space between stacked columns */
+    text-align: center;
+
+
+  }
+}
+.social-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Styling for the copyright text */
+.footer p {
+  text-align: center; /* Center the copyright text */
+  margin: 0; /* Remove default margin */
+  padding: 10px 0; /* Padding for separation */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.footer {
+  padding: 50px 10px 20px; /* Add bottom padding for spacing */
+  color: white;
+  background-color: black;
+  line-height: 30px;
+  text-align: center;
+  position: relative; /* Adjust footer position */
+  width: 100%;
+  bottom: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align items evenly */
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.social-icon .fa-instagram {
+  color: #833AB4; 
+}
+
+.social-icon .fa-twitter {
+  color: #1DA1F2;
+}
+
+/* Optional styles for responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 10px;
+  }
+}
+
+.d-block{
+  text-decoration: none;
+  font-size: large;
+  color: white;
+}

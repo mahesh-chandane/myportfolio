@@ -1,0 +1,161 @@
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mahesh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#header">Home</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#services">Services</a>
+          </li>
+          
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="header">
+    <div class="container">
+        <!-- <nav>
+
+            <img src="" alt="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> -->
+
+
+
+        <div class="header-text">
+            <p>Java Developer / Web Developer</p>
+            <h1>Hi, I'm <span>Mahesh</span> <br> </h1>
+          
+        </div>
+    </div>
+</div>
+
+
+<div id="about">
+    <div class="conatiner">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/assets/about.avif" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1> <br>
+                <p>I recently graduated with a Bachelor's of Engineering degree and completed a software development course at Qspider Pune. My expertise lies in core JAVA, SQL, HTML, CSS, JS, and J2EE. I'm dedicated to continuously learning and adapting to the latest technologies. If you're seeking a Software Developer or Software Engineer with a strong skill set and a commitment to excellence, I'd be thrilled to connect and discuss potential opportunities.</p>
+            
+                <div class="tab-title">
+                    <p class="tab-links" (click)="showTab('skills')" [ngClass]="{'active-link': activeTab === 'skills'}">Skills</p>
+                    <p class="tab-links" (click)="showTab('experience')" [ngClass]="{'active-link': activeTab === 'experience'}">Experience</p>
+                    <p class="tab-links" (click)="showTab('education'); $event.preventDefault()" class="tab-links" [ngClass]="{'active-link': activeTab === 'education'}">Education</p>
+                </div>
+                
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'skills'}" id="skills">
+                    <ul>
+                        <li><span>Programming Skills</span><br>Java Standard Edition, Java Enterprises Edition</li>
+                        <li><span>Databases </span><br>MySQL, PostgreSQL</li>
+                        <li><span>Frameworks</span><br>Spring Boot, Hibernate</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'experience'}" id="experience">
+                    <ul>
+                        <li><span>Framework</span><br>Spring Boot Framework</li>
+                        <li><span>Development</span><br>Java Developer</li>
+                        <li><span>API</span><br>Building REST API
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'education'}" id="education">
+                    <ul>
+                        <li><span>2022 (B.E)</span><br>Anuradhara Engineering College Chikhli</li>
+                        <li><span>2018 (12th)</span><br>Jijamata Junior College Hiwara Khurd </li>
+                        <li><span>2016 (10th)</span><br>Government Public School Amaravati </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="containers mt-4">
+  <div class="row justify-content-center">
+    <!-- Java Development Card -->
+     
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card custom-card">
+        <div class="card-header java-header">
+          <img src="assets\java.png" alt="Java Logo" class="card-icon"> 
+          <span>Java Development</span>
+        </div>
+        <div class="card-body text-center">
+          <ul class="custom-list">
+            <li>Core Java</li>
+            <li>OOPs Concepts</li>
+            <li>Multithreading</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spring Boot Card -->
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card custom-card">
+        <div class="card-header spring-header">
+          <img src="assets\spring.png" alt="Spring Boot Logo" class="card-icon"> 
+          <span>Spring Boot Framework</span>
+        </div>
+        <div class="card-body text-center">
+          <ul class="custom-list">
+            <li>Spring MVC</li>
+            <li>Spring Security</li>
+            <li>Spring Data JPA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- AWS Service Card -->
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card custom-card">
+        <div class="card-header aws-header">
+          <img src="assets\aws.png" alt="AWS Logo" class="card-icon"> 
+          <span>AWS Services</span>
+        </div>
+        <div class="card-body text-center">
+          <ul class="custom-list">
+            <li>EC2 & S3</li>
+            <li>Lambda Functions</li>
+            <li>CloudFormation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,282 @@
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+ <div class="name">   <img src="/assets/logo4.jpeg" alt="" class="logo">
+  <a  class="logo-name">Portfolio</a></div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="/assets/icons8-menu-24.png" alt="">
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown"   appClickOutside (clickOutside)="closeNavbar()">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#header">Home</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#services">Services</a>
+        </li>
+        
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="header">
+    <div class="container">
+              <div class="header-text">
+                <div class="profile-img">
+                  <img src="\assets\mahesh.jpg" alt="Profile Picture">
+              </div>
+            <p>Java Full Stack Developer</p>
+            <h1>Hi, I'm <span>Mahesh</span> <br> </h1>
+            <a href="assets/MAHESH_CHANDANE_resume.pdf" download="My_Resume.pdf">
+              <button class="download-btn">Download Resume</button>
+          </a>
+        </div>
+
+        <div> 
+         
+      </div>
+
+
+<!-- <div class="download-button-container">
+  <button mat-raised-button color="primary">
+    <mat-icon>download</mat-icon> Download Resume
+  </button>
+</div> -->
+       
+    </div>
+</div>
+
+<!-- ABOUT  -->
+
+<div id="about">
+    <div class="conatiner">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/assets/about.avif" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1> <br>
+                <p>I recently graduated with a Bachelor's of Engineering degree and completed a software development course at Qspider Pune. My expertise lies in core JAVA, SQL, HTML, CSS, JS, and J2EE. I'm dedicated to continuously learning and adapting to the latest technologies. If you're seeking a Software Developer or Software Engineer with a strong skill set and a commitment to excellence, I'd be thrilled to connect and discuss potential opportunities.</p>
+            
+                <div class="tab-title">
+                    <p class="tab-links" (click)="showTab('skills')" [ngClass]="{'active-link': activeTab === 'skills'}">Skills</p>
+                    <p class="tab-links" (click)="showTab('experience')" [ngClass]="{'active-link': activeTab === 'experience'}">Experience</p>
+                    <p class="tab-links" (click)="showTab('education'); $event.preventDefault()" class="tab-links" [ngClass]="{'active-link': activeTab === 'education'}">Education</p>
+
+                    <p class="tab-links" (click)="showTab('project'); $event.preventDefault()" class="tab-links" [ngClass]="{'active-link': activeTab === 'project'}">Project</p>
+                </div>
+                
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'skills'}" id="skills">
+                    <ul>
+                        <li><span>Programming Skills</span><br>Java Standard Edition, Java Enterprises Edition</li>
+                        <li><span>Databases </span><br>MySQL, PostgreSQL</li>
+                        <li><span>Frameworks</span><br>Spring Boot, Hibernate</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'experience'}" id="experience">
+                    <ul>
+                        <li><span>Framework</span><br>Spring Boot Framework</li>
+                        <li><span>Development</span><br>Java Developer</li>
+                        <li><span>API</span><br>Building REST API
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'education'}" id="education">
+                    <ul>
+                        <li><span>2022 (B.E)</span><br>Anuradhara Engineering College Chikhli</li>
+                        <li><span>2018 (12th)</span><br>Jijamata Junior College Hiwara Khurd </li>
+                        <li><span>2016 (10th)</span><br>Government Public School Amaravati </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'project'}" id="[project]">
+                  <ul>
+                      <li><span>Hotel Booking</span><br>Provider hotel Booking to the user</li>
+                      <li><span>Test Series</span><br>Test series provider platform to learn and exam practice </li>
+                      <li><span>Complete Care</span><br>Service Provider Application</li>
+                  </ul>
+              </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+
+
+<div class="containers mt-4" id="services">
+  <h1 class="sub-title" style="margin-left: 10px">Services</h1>
+
+  <div class="row justify-content-center">
+    <!-- Java Development Card -->
+     
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card custom-card">
+        <div class="card-header java-header">
+          <img src="assets\java.png" alt="Java Logo" class="card-icon"> 
+          <span>Java Development</span>
+        </div>
+        <div class="card-body text-center">
+          <ul class="custom-list">
+            <li>Core Java</li>
+            <li>OOPs Concepts</li>
+            <li>Multithreading</li>
+            <li>Java 1.8 Feature</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spring Boot Card -->
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card custom-card">
+        <div class="card-header spring-header">
+          <img src="assets\spring.png" alt="Spring Boot Logo" class="card-icon"> 
+          <span>Spring Boot Framework</span>
+        </div>
+        <div class="card-body text-center">
+          <ul class="custom-list">
+            <li>Restful API</li>
+            <li>Spring MVC</li>
+            <li>Spring Security</li>
+            <li>Spring Data JPA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+     <!-- My Sql databasee Card -->
+     <div class="col-md-4 col-sm-6 col-12">
+      <div class="card custom-card">
+        <div class="card-header mysql-header">
+          <img src="assets\mysql.png" alt="AWS Logo" class="card-icon"> 
+          <span>MySQL Database</span>
+        </div>
+        <div class="card-body text-center">
+          <ul class="custom-list">
+            <li>Database Design</li>
+            <li>Data Manipulation</li> 
+            <li>Data Management</li> 
+            <li>Query Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card custom-card">
+        <div class="card-header angular-header">
+          <img src="assets\angular.png" alt="AWS Logo" class="card-icon"> 
+          <span>Angular Framework</span>
+        </div>
+        <div class="card-body text-center">
+          <ul class="custom-list">
+            <li>Component-based Architecture</li> 
+            <li>Data Binding</li> 
+            <li>Routing & Navigation</li>
+            <li>Forms Handling</li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- AWS Service Card -->
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card custom-card">
+        <div class="card-header aws-header">
+          <img src="assets\aws.png" alt="AWS Logo" class="card-icon"> 
+          <span>AWS Services</span>
+        </div>
+        <div class="card-body text-center">
+          <ul class="custom-list">
+            <li>EC2 </li>
+            <li>S3 Bucket</li>
+            <li>Lambda Functions</li>
+            <li>CloudFormation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+       
+  </div>
+</div>
+
+
+
+<!-- ...................contact....................... -->
+<div id="contact">
+    <div class="conatier">
+        <div class="row">
+            <div class="contact-left">
+              
+              <h1 class="sub-title">Contact me</h1>
+                <p><img src="assets/e.png"  id="img-icon">maheshchandane398&gmail.com</p>
+               
+                <p><img src="assets/p.png" id="img-icon" > +91-7620177830</p>
+                <div class="social-icons">
+                  
+                    <a href="https://www.linkedin.com/in/mahesh-chandane "><img src="assets/linkedIn.png" id="img-icon"> </a>
+
+                    <a href="https://github.com/mahesh-chandane"><img src="assets/git.png" id="img-icon"> </a>
+
+                    <a href="#"><img src="assets/twitter.png" id="img-icon"> </a>
+                </div>
+            </div>
+            <div class="contact-right">
+
+    <!-- user form  -->
+
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="form">
+        <div >
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" [(ngModel)]="user_email" #emailInput="ngModel" required>
+            <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="error">
+              <div *ngIf="emailInput.errors && emailInput.errors['required']">Email is required.</div>
+              <div *ngIf="emailInput.errors && emailInput.errors['email'] && !emailInput.errors['required']">Invalid email format.</div>
+            </div>
+          </div>
+          
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" [(ngModel)]="user_name" #nameInput="ngModel" required>
+            <div *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched)" class="error">
+              <div *ngIf="nameInput.errors && nameInput.errors['required']">Name is required.</div>
+            </div>
+          </div>
+          
+          <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="4" placeholder="Enter Your Message" [(ngModel)]="message" #messageInput="ngModel" required></textarea>
+            <div *ngIf="messageInput.invalid && (messageInput.dirty || messageInput.touched)" class="error">
+              <div *ngIf="messageInput.errors && messageInput.errors['required']">Message is required.</div>
+            </div>
+          </div>
+        <button type="submit"  class="btn btn2"  (click)="reset()">Submit</button>
+      </form>
+      
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
